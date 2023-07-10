@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: #D5D5D5;
+        font-family: system-ui;
+    }
+    .container{
+        background-color: #E9E7EA;
+        width:1000px;
+        max-width: 100%;
+        margin:auto;
+        padding:50px;
+        box-shadow: 0 10px 50px #858585;
+        display: grid;
+       grid-template-columns: 35% 60%;
+       column-gap: 5%; 
+       row-gap: 30px;
+    }
+    
+    .avatar img{
+        width:200px;
+        height:200px;
+        object-fit: cover;
+        border-radius: 50%;
+        justify-items: center;
+    }
+    .avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        padding-left: 30px;
+        border-left:1px solid #000;
+    }
+    .name h1{
+        font-weight: 300;
+        font-size: xxx-large;
+        margin:0px 0 5px ;
+    }
+    .name .specialize{
+        margin:0;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .name .contact{
+        padding:0;
+        list-style: none;
+    }
+    .name .contact span{
+        display: inline-block;
+        background-color: #000;
+        width:20px;
+        height:20px;
+        color:#fff;
+        text-align: center;
+        border-radius: 50%;
+        font-size: small;
+        margin-right: 20px;
+    }
+    .name .contact li{
+        padding:5px 0;
+        transform: translate(-40px);
+        background-color: #E9E7EA;
+    }
+    .info ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+        line-height: 30px;
+    } 
+    
+    h2{
+        padding:0;
+        margin: 0 0 20px 0;
+    }
+    .intro{
+        padding-left: 30px;
+        border-left: 1px solid #000;
+        text-align: justify;
+    }
+
+    .career-goals{
+        text-align: justify;
+    }
+    .career-goals h2{
+        text-align: right;
+    }
+    .experience{
+        text-align: right;
+    }
+    .experience h4{
+        margin:20px 0 10px;
+    }
+    .skills{
+        margin-top:  50px;
+    }
+    .experience ul{
+        padding:0;
+        margin: 0;
+    list-style: none;
+    }
+    .experience li{
+        padding:10px 0;
+    }
+    .project{
+        padding-left: 30px;
+        text-align: justify;
+        border-left: 1px solid #000;
+    }
+    .project h4{
+        margin:20px 0 10px;
+    }
+    .project .web{
+        color: #0c7373;
+        padding:10px 0;
+    }
+    .project .position{
+        font-weight: 500;
+        padding-bottom:10px;
+    }
+    .project .item{
+        position: relative;
+    }
+    .project .item::before{
+        position: absolute;
+        width:13px;
+        height: 13px;
+        background-color: #000;
+        content: '';
+        border-radius: 50%;
+        left: -37px;
+    }
+    .time {
+        margin: 6px 0 6px 0;
+    }
+    textarea {
+        resize: none;
+    }
+    </style>
+    
+</head>
+<body>
+   <div class="container">
+    <div class="avatar">
+     <img src="https://cornerstoneia.com/wp-content/uploads/2019/08/avatar-placeholder.jpeg" alt="">
+    </div>
+    <div class="name">
+         <ul class="contact">
+            <li>
+                <span>N</span>
+                <input type="text" style="font-size: 40px;" placeholder="Your Name">
+            </li>
+             <li>
+                 <span>P</span>
+                 <input type="text" style="font-size: 15px;"  placeholder="Your applied position">
+             </li>
+             <li>
+                <span>T</span> <input type="text" placeholder="Your phone number">
+            </li>
+             <li>
+                 <span>E</span> <input type="text" placeholder="Your email">
+             </li>
+             <li>
+                 <span>G</span> <select>
+                    <option value="">Please choose your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+             </li>
+             <li>
+                <span>A</span>
+                <input type="text" placeholder="Your address"></li>
+             <li><span>B</span>
+                <input type="date"></li>
+            
+         </ul>
+    </div>
+    <div class="career-goals">
+        <h2>CAREER GOALS</h2>
+        <textarea  name="" id="" cols="45" rows="5"></textarea>
+    </div>
+    <div class="intro">
+     <h2>INTRODUCE MYSELT</h2>
+     <textarea name="" id="" cols="65" rows="5"></textarea>
+    </div>
+    <div class="experience">
+     <h2>EXPERIENCE</h2>
+
+     <div class="item">
+         <h4><input type="text" placeholder="Your job position"></h4>
+         <input type="text" placeholder="Your company">
+         <div class="time">
+            <span><input type="date"> - <input type="date"></span>
+            
+         </div>
+         <div class="des">
+            <textarea  name="" id="" cols="45" rows="5" placeholder="Describe your work experience"></textarea>
+         </div>
+     </div>
+         <h2 class="skills">
+             SKILLS
+         </h2>
+         <input type="text" placeholder="Your skills">
+         
+
+    </div>
+    <div class="project">
+     <h2>PROJECTS</h2>
+     <div class="item">
+         <h4><input type="text" placeholder="Name of project"></h4>
+         <div class="time">
+            <span><input type="date"> - <input type="date"></span>
+            
+         </div>
+         <div class="web">
+             <input type="text" placeholder="Your link">
+         </div>
+         <div class="position">
+             <input type="text" placeholder="Your position">
+         </div>
+         <div class="des">
+            <textarea  cols="65" rows="5"></textarea>
+         </div>
+     </div>
+    </div>
+</div>
+ 
+</body>
+</html>
